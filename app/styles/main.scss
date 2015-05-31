@@ -4,7 +4,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 body {
-  padding-top: 50px;
+  padding-top: 65px;
+  background-color: #f3f5f6;
+}
+
+.navbar-brand {
+  font-family: "Proxima Nova","helvetica neue",helvetica,arial,sans-serif;
 }
 
 .gallery-container {

@@ -1,0 +1,15 @@
+<div ng-repeat="album in albums">
+  <a ng-href='{{ album.url }}'>
+    <div class='tile' ng-style="{'background-image':'url({{ album.thumbnail }})'}">
+      <div class='tile-info'>
+        <div class='tile-info-spacer'></div>
+        <div class='tile-info-title'>
+          <div class='text'><strong>{{ album.title }}</strong></div> 
+        </div> 
+        <div class='tile-info-desc'>
+          <div class='text'>{{ album.description }}</div>
+        </div> 
+      </div> 
+    </div> 
+  </a>
+</div>

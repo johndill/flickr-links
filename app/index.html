@@ -19,51 +19,37 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
+    
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" 
+                  class="navbar-toggle collapsed" 
+                  data-toggle="collapse" 
+                  data-target="#navbar" 
+                  aria-expanded="false" 
+                  aria-controls="navbar">
+
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Flikr Links</a>
+          <a class="navbar-brand" href="#">Flickr Links</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="#/albums">Albums</a></li>
+            <li><a href="#/login">Login</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
+    
+    <!-- main content -->
     <div class="container">
-
-      <div class="gallery-container" ng-controller="galleryCtrl">
-        
-        <div ng-repeat="album in albums">
-          <a ng-href='{{ album.url }}'>
-            <div class='tile' ng-style="{'background-image':'url({{ album.thumbnail }})'}">
-              <div class='tile-info'>
-                <div class='tile-info-spacer'></div>
-                <div class='tile-info-title'>
-                  <div class='text'><strong>{{ album.title }}</strong></div> 
-                </div> 
-                <div class='tile-info-desc'>
-                  <div class='text'>{{ album.description }}</div>
-                </div> 
-              </div> 
-            </div> 
-          </a>
-        </div>
-        
-      </div>
-
-    </div><!-- /.container -->
+      <div ng-view=""></div>
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -83,6 +69,7 @@
     <script src="bower_components/firebase/firebase.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
