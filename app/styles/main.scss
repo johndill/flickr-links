@@ -1,0 +1,62 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+  padding-top: 50px;
+}
+
+.gallery-container {
+  padding: 40px 15px;
+  text-align: left;
+}
+
+.tile {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin: 0px 5px 5px 0px;
+  overflow: hidden;
+}
+
+.tile-info {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  -webkit-transition: top 500ms ease-out;
+  -moz-transition: top 500ms ease-out;
+  -o-transition: top 500ms ease-out;
+  transition: top 500ms ease-out;
+}
+
+.tile-info:hover {
+  top: -75%;
+}
+
+.tile-info-title {
+  background-color: rgba(0,0,0,.6);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  height: 25%;
+  width: 100%;
+}
+
+.tile-info-desc {
+  background-color: rgba(0,0,0,.6);
+  color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  height: 75%;
+  width: 100%;
+}
+
+.tile-info-spacer {
+  height: 75%;
+}
+
+.text {
+  padding: 10px;
+}

@@ -1,0 +1,9 @@
+{
+  "firebase": "flickr-links",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
