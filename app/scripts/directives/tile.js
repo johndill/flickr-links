@@ -1,5 +1,4 @@
 /*global myApp*/
-
 'use strict';
 
 myApp.directive('tile', function() {
