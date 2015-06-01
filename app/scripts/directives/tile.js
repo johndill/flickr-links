@@ -10,6 +10,6 @@ myApp.directive('tile', function() {
 			title: '@title',
 			description: '@description'
 		},
-		templateUrl: 'scripts/directives/tile.html'
+		templateUrl: 'partials/directives/tile.html'
 	};
 });

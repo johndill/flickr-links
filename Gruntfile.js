@@ -279,10 +279,10 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= config.dist %>',
-                    src: '{,*/}*.html',
+                    cwd: '<%= config.app %>',
+                    src: ['*.html', 'partials/**/*.html'], //'{,*/}*.html',
                     dest: '<%= config.dist %>'
-        }]
+								}]
             }
         },
 
